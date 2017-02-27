@@ -25,4 +25,13 @@ describe 'fizzbuzz' do
     end
   end
 
+  context 'while playing the game it returns' do
+    it 'returns a number' do
+      expect(fizzbuzz(1)).to eq 1
+    end
+    it 'returns fizz' do
+      expect(fizzbuzz(3)).to eq 'Fizz'
+    end
+  end
+
 end
