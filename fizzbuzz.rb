@@ -20,3 +20,12 @@ end
 def is_divisible_by?(number, divisor)
   number % divisor == 0
 end
+
+# test calls
+# puts 1.upto(100){ |number| puts fizzbuzz (number) }
+fizzez = (1..100).map{ |number| fizzbuzz(number) }
+puts fizzez
+puts fizzez.count
+puts fizzez.select{|element| element == 'Fizz'}.count
+puts fizzez.select{|element| element == 'Buzz'}.count
+puts fizzez.select{|element| element == 'FizzBuzz'}.count
