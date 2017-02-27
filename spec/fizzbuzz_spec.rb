@@ -32,6 +32,9 @@ describe 'fizzbuzz' do
     it 'returns fizz' do
       expect(fizzbuzz(3)).to eq 'Fizz'
     end
+    it 'returns Buzz' do
+      expect(fizzbuzz(5)).to eq 'Buzz'
+    end
   end
 
 end
