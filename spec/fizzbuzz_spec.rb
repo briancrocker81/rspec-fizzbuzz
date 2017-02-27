@@ -8,6 +8,9 @@ describe 'fizzbuzz' do
     it 'is divisible by 5' do
       expect(is_divisible_by_five?(5)).to be_truthy
     end
+    it 'is divisible by 15' do
+      expect(is_divisible_by_fifteen?(15)).to be_truthy
+    end
   end
 
   context 'knows a number is not divisible by' do
@@ -16,6 +19,9 @@ describe 'fizzbuzz' do
     end
     it 'is not divisible by 5' do
       expect(is_divisible_by_five?(1)).not_to be_truthy
+    end
+    it 'is not divisible by 15' do
+      expect(is_divisible_by_fifteen?(1)).not_to be_truthy
     end
   end
 
